@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import App from "./App";
-import About from "./About";
-import Works from "./Works";
-import Services from "./Services";
-import Info from "./Info";
-import Contact from "./Contact";
+import App from "./pages/App";
+import About from "./pages/About";
+import Works from "./pages/Works";
+import Services from "./pages/Services";
+import Info from "./pages/Info";
+import Contact from "./pages/Contact";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <BrowserRouter>

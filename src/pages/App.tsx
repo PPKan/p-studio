@@ -1,11 +1,13 @@
 import "../css/reset.css";
 import "../css/App.scss";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function App() {
   return (
     <>
       <Navbar />
+      <Footer />
     </>
   );
 }

@@ -1,0 +1,46 @@
+@import "./colors.scss";
+@import "./fonts.scss";
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left:5%;
+  width: 90%;
+  max-width: 90%;
+  height: 16rem;
+  display: flex;
+  color: $text-main;
+}
+
+.navbar__icon {
+  align-self: center;
+  font-family: 'Caveat', cursive;
+  font-size: 2.5rem;
+}
+
+.navbar__pages, .navbar__languages {
+  align-items: center;
+  font-size: 1rem;
+  list-style: none;
+  display: flex;
+}
+
+.navbar__pages {
+  font-family: "GenSenRounded TW";
+  gap: 3.75rem;
+  padding: 0;
+  margin-left: auto;
+}
+
+.navbar__languages {
+  font-family: 'Overpass', 'Arial';
+  font-weight: bold;
+  justify-content: flex-end;
+  margin-left: 5rem;
+  gap:0.5rem;
+  padding: 0;
+}
+
+.navbar__languages__items--split {
+  user-select: none;
+}

@@ -6,7 +6,7 @@ type Props = {};
 export default function Footer({}: Props) {
   return (
     <>
-      <div className="footer">
+      <footer className="footer">
         <div className="footer__icon">P. Studio</div>
         <ul className="footer__pages">
           <li className="footer__pages__items">關於</li>
@@ -22,7 +22,8 @@ export default function Footer({}: Props) {
           <li className="footer__pages__items">消息</li>
           <li className="footer__pages__items">聯絡</li>
         </ul>
-      </div>
+        <p className="footer__claim">P. Studio 2022 © All rights reserved.</p>
+      </footer>
     </>
   );
 }

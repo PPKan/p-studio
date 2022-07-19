@@ -1,4 +1,9 @@
 @import "./colors.scss";
 @import "./fonts.scss";
 
+// global css
 
+body {
+  background-color: $background;
+  font-family:'Overpass', 'GenSenRounded TW', 'Microsoft JhengHei', '微軟正黑體';
+}

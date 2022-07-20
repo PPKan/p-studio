@@ -1,0 +1,10 @@
+.shadow-card {
+  background: #ffffff;
+  box-shadow: 5px 5px 5px 3px rgba(139, 139, 139, 0.28);
+  border-radius: 5px;
+}
+
+.shadow-card--22w-33h {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+}

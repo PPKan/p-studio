@@ -1,0 +1,60 @@
+@import "../ShadowCard.scss";
+
+.front__services {
+}
+
+.front__services__main-title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  letter-spacing: 0.2em;
+}
+
+.front__services__sub-title {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  color: #803f3f;
+}
+
+.front__services__cards {
+  align-self: center;
+  width: 78rem;
+  max-width: 80vw;
+  display: flex;
+  gap: 6rem;
+}
+
+.front__services__cards__card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.front__services__cards__card__image {
+  align-self: center;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1 / 1;
+  background-color: bisque;
+}
+
+.front__services__cards__card__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #803f3f;
+  align-self: center;
+  padding: 1.875rem 0 1.875rem;
+}
+
+.front__services__cards__card__text {
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: rgba(128, 63, 63, 0.9);
+}

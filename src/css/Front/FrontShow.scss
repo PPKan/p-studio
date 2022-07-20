@@ -1,0 +1,26 @@
+@import "../colors.scss";
+@import "../fonts.scss";
+@import "./Front.scss";
+@import "../ShadowCard.scss";
+
+.front__show {
+}
+
+.front__show__main-title {
+  font-weight: 400;
+  line-height: 3.5rem;
+  font-size: 3.5rem;
+}
+
+.front__show__sub-title {
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.front__show__image {
+  max-width: 87vw;
+  align-self: center;
+  box-shadow: 31px 31px 15px 2px rgba(99, 99, 99, 0.23);
+}

@@ -1,11 +1,11 @@
 import "./css/reset.css";
 import "./css/App.scss";
-import Front from "./pages/Front";
+import Front from "./pages/Front/Front";
 
 function App() {
   return (
     <>
-    <Front />
+    <Front/>
     </>
   );
 }

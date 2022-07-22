@@ -33,7 +33,9 @@ html:focus-within {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  text-rendering: optimizeSpeed;
+
+  /* This may cause swipper not running correctly */
+  /* text-rendering: optimizeSpeed; */
   line-height: 1.5;
 }
 

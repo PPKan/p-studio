@@ -2,12 +2,30 @@
   width: 100vw;
 }
 
+.spacer__background--left {
+  position: absolute;
+  height: 20rem;
+  margin-left: -10%;
+  opacity: 0.3;
+}
+
+.spacer__background--right {
+  position: absolute;
+  right: 0;
+  height: 20rem;
+  margin-right: -10%;
+  opacity: 0.3;
+  transform: rotate(180deg);
+} 
+
 .spacer--3h {
   width: 100vw;
   height: 3rem;
 }
 
 .spacer--16h {
+  position: relative;
+  overflow: hidden;
   width: 100%;
   height: 16rem;
 }

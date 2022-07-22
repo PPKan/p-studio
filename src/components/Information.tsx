@@ -1,4 +1,5 @@
 import React from 'react'
+import "../css/Information.scss"
 
 type Props = {
   date: String,
@@ -9,10 +10,8 @@ export default function Information({date, title}: Props) {
   return (
     <>
     <div className='information'>
-      <div className='information__item'>
-        <p className='information__item__date'>{date}</p>
-        <p className='information__item__title'>{title}</p>
-      </div>
+        <p className='information__date'>{date}</p>
+        <p className='information__title'>{title}</p>
     </div>
     </>
   )

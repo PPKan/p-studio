@@ -1,3 +1,4 @@
+@import "../fonts.scss";
 
 .front__box {
   position: relative;
@@ -9,16 +10,23 @@
 
 .front__box__main-title {
   align-self: center;
-  font-family: "Overpass";
   font-style: normal;
   color: #803f3f;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+  letter-spacing: 0.2em;
 }
 
 .front__box__sub-title {
+  font-weight: 300;
   align-self: center;
   font-style: normal;
   color: #803f3f;
   margin-bottom: 3rem;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  color: #803f3f;
 }
-

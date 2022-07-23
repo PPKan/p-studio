@@ -1,9 +1,8 @@
+/* Keep the ratio, use @media to modify sizes. */
+
 .workswebslider {
-  height: 36.5rem;
-  max-height: 80vh;
-  width: 60%;
-  min-width: 49%;
-  max-width: 61.125rem;
+  width: 80rem;
+  height: 45rem;
   background: #ffffff;
   border: 3px solid #FFEAED;
   box-shadow: 5px 5px 5px 3px rgba(139, 139, 139, 0.28);
@@ -15,19 +14,23 @@
   }
   
   .swiper-button-next::after, .swiper-button-prev::after {    
-    color: grey;
+    color: #B7B7B7;
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 1.5rem;
   }
   
   .swiper-button-next::before, .swiper-button-prev::before {
     position: absolute;
     z-index: -1;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 100%;
+    width: 175%;
     content: "";
     border-radius: 50%;
-    border: 1.5px solid grey;
+    border: 2px solid #B7B7B7;
+  }
+
+  .swiper-button-prev {
+    left: 5%;
   }
 
   .swiper-button-next {
@@ -41,6 +44,7 @@
   }
 
   .workswebslider__metronome__title {
+    font-size: 2rem;
     position: absolute;
     top: 2%;
     color: #F194A1;

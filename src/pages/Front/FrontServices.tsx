@@ -15,8 +15,10 @@ export default function FrontServices({}: Props) {
       <div className="front__services__cards">
         <div className="front__services__cards__card shadow-card shadow-card--22w-33h">
           <picture className="front__services__cards__card__image">
-            <source></source>
-            <img />
+            <source
+              srcSet="src/images/flipping-languages.png" type="image/apng"
+            ></source>
+            <img src="src/images/flipping-languages.gif" />
           </picture>
           <h3 className="front__services__cards__card__title">翻譯</h3>
           <p className="front__services__cards__card__text">
@@ -25,8 +27,8 @@ export default function FrontServices({}: Props) {
         </div>
         <div className="front__services__cards__card shadow-card shadow-card--22w-33h">
           <picture className="front__services__cards__card__image">
-            <source></source>
-            <img />
+            <source srcSet="src/images/website-drawing.png" type="image/apng"></source>
+            <img src="src/images/website-drawing.gif" />
           </picture>
           <h3 className="front__services__cards__card__title">網頁設計</h3>
           <p className="front__services__cards__card__text">

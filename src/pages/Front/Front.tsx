@@ -7,6 +7,7 @@ import FrontShow from "./FrontShow";
 import FrontWorks from "./FrontWorks";
 import FrontInformation from "./FrontInformation";
 import bgicon from "../../images/bg-icon.svg";
+import FrontContact from "./FrontContact";
 
 type Props = {};
 
@@ -17,17 +18,26 @@ export default function Front({}: Props) {
       <div className="spacer--16h"></div>
       <FrontShow />
       <div className="spacer--16h">
-      <img className="spacer__background--left" src={bgicon} alt=""/>
+        <img className="spacer__background--left" src={bgicon} alt="" />
       </div>
       <FrontServices />
       <div className="spacer--16h">
-      <img className="spacer__background--right" src={bgicon} alt=""/>
+        <img className="spacer__background--right" src={bgicon} alt="" />
       </div>
-      
+
       <FrontWorks />
-      <div className="spacer--16h"></div>
+      <div className="spacer--16h">
+        <img className="spacer__background--left" src={bgicon} alt="" />
+      </div>
+
       <FrontInformation />
-      <div className="spacer--16h"></div>
+      <div className="spacer--16h">
+        <img className="spacer__background--right" src={bgicon} alt="" />
+      </div>
+      <FrontContact />
+      <div className="spacer--16h">
+        <img className="spacer__background--left" src={bgicon} alt="" />
+      </div>
       <Footer />
     </>
   );

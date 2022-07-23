@@ -3,7 +3,7 @@
 .front__contact {
   position: relative;
   display: flex;
-  height: 45rem;
+  height: 35rem;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -26,12 +26,12 @@
 .front__contact__key {
   margin-right: 2.5rem;
   z-index: 1;
-  animation: turn-key-out 1.5s ease-in-out forwards;
+  animation: turn-key-out 1s ease-in-out forwards;
   // transition: all 2s;
 }
 
 .front__contact__container:hover >.front__contact__key {
-  animation: turn-key-in 1.5s ease-in-out forwards;
+  animation: turn-key-in 1s ease-in-out forwards;
 }
 
 @keyframes turn-key-in {

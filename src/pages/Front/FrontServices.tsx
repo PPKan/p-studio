@@ -37,8 +37,10 @@ export default function FrontServices({}: Props) {
         </div>
         <div className="front__services__cards__card shadow-card shadow-card--22w-33h">
           <picture className="front__services__cards__card__image">
-            <source></source>
-            <img />
+          <picture className="front__services__cards__card__image">
+            <source srcSet="src/images/language-to-art.png" type="image/apng"></source>
+            <img src="src/images/language-to-art.gif" />
+          </picture>
           </picture>
           <h3 className="front__services__cards__card__title">
             全方位語言整合

@@ -43,14 +43,15 @@
     justify-content: center;
   }
 
-  .workswebslider__metronome__title {
+  .workswebslider__slide__title {
     font-size: 2rem;
     position: absolute;
     top: 2%;
     color: #F194A1;
   }
 
-  .workswebslider__metronome__image {
+  .workswebslider__slide__image {
+    padding-top: 5%;
     max-width: 90%;
     max-height: 90%;
   }

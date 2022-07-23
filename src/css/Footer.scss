@@ -19,6 +19,10 @@
   font-size: 2.5rem;
 }
 
+.footer__pages, .footer__pages__items__sublist {
+  font-family: 'huninn';
+}
+
 .footer__pages {
   position: relative;
   top: calc(50% - 0.4375rem);
@@ -26,7 +30,6 @@
   font-size: 0.875rem;
   list-style: none;
   display: flex;
-  font-family: "GenSenRounded TW", "Microsoft JhengHei", "微軟正黑體";
   gap: 3.75rem;
   padding: 0;
   margin-left: auto;

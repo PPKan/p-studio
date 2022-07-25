@@ -1,0 +1,29 @@
+.routes-title {
+  position: relative;
+  background-image: url("../images/routes-title-bg.png");
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 18.3125rem;
+  gap: 2rem;
+  width: 100%;
+}
+
+.routes-title__title {
+  margin-top: -3%;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 0.2em;
+  color: #803f3f;
+}
+
+.routes-title__text {
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 20px;
+color: rgba(128, 63, 63, 0.8);
+}

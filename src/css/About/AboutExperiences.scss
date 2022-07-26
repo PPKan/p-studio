@@ -1,0 +1,43 @@
+.about-experiences__cardbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-experiences-card {
+  display: flex;
+}
+
+.about-experiences-card__image-box {
+  width: 16.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-experiences-card__image {
+}
+
+.about-experiences-card__content {
+  margin-top: 1.5rem;
+  margin-right: 4.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.about-experiences-card__content__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #803f3f;
+}
+
+.about-experiences-card__content__text {
+  font-family: "hunnin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(128, 63, 63, 0.8);
+}

@@ -1,0 +1,15 @@
+.about-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.about-box__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  letter-spacing: 0.2em;
+  color: #803f3f;
+}

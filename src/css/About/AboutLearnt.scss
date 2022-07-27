@@ -1,0 +1,57 @@
+
+
+.about-learnt__cardbox {
+  width: 78rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6.25rem;
+}
+
+.about-learnt-card {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-learnt-card__image {
+  width: 15.625rem;
+  height: 15.625rem;
+  margin: 2rem;
+}
+
+.about-learnt-card__content {
+  width: 100%;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-learnt-card__content__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: 0.05em;
+  color: #803f3f;
+}
+
+.about-learnt-card__content__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.625rem;
+  width: 74%;
+  margin-top: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  // line-height: 16px;
+  color: rgba(128, 63, 63, 0.9);
+}

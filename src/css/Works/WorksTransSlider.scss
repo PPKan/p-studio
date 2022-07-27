@@ -1,0 +1,26 @@
+.workstransslider {
+  width: 100%;
+}
+
+.workstransslider__slider {
+  width: 50rem;
+  height: 65.8125rem;
+  background-color: #F2E1C7;
+}
+
+.workstransslider__slider__slide {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.workstransslider__slider__slide__title {
+font-style: normal;
+font-weight: 400;
+font-size: 2.25rem;
+line-height: 2.25rem;
+color: black;
+
+
+}

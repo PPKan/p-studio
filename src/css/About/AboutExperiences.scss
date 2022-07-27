@@ -1,6 +1,7 @@
 .about-experiences__cardbox {
   display: flex;
   flex-direction: column;
+  gap: 2.875rem;
 }
 
 .about-experiences-card {
@@ -34,6 +35,9 @@
 }
 
 .about-experiences-card__content__text {
+  max-width: 50rem;
+  word-wrap: break-word;
+  white-space: pre-wrap;
   font-family: "hunnin";
   font-style: normal;
   font-weight: 400;

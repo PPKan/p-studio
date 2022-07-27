@@ -1,8 +1,10 @@
 .about-box {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
+  gap: 2.5rem;
 }
 
 .about-box__title {

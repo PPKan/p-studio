@@ -1,6 +1,6 @@
 import React from "react";
 import AboutExperiencesCard from "./AboutExperiencesCard";
-import { AboutExperienceData } from "./AboutExperiencesData";
+import { AboutExperienceData } from "./AboutData";
 import "../../css/About/AboutExperiences.scss"
 
 type Props = {};

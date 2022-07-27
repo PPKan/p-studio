@@ -1,5 +1,5 @@
 import React from 'react'
-import WorksWebSlider from '../../components/WorksWebSlider'
+import WorksWebSlider from '../Works/WorksWebSlider'
 
 import "../../css/Front/FrontWorks.scss"
 

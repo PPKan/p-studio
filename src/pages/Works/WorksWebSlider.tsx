@@ -10,12 +10,12 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-import "../css/WorksWebSlider.scss";
+import "../../css/Works/WorksWebSlider.scss";
 
-import metronomeJPG from "../images/slider/metronome.jpg";
-import calculatorJPG from "../images/slider/calculator.jpg";
-import portfolioPNG from "../images/slider/portfolio.png";
-import shoppingCartPNG from "../images/slider/shopping-cart.png";
+import metronomeJPG from "../../images/slider/metronome.jpg";
+import calculatorJPG from "../../images/slider/calculator.jpg";
+import portfolioPNG from "../../images/slider/portfolio.png";
+import shoppingCartPNG from "../../images/slider/shopping-cart.png";
 
 export default () => (
   <Swiper

@@ -1,0 +1,28 @@
+.services-card {
+  display: flex;
+  padding: 6.1875rem 3.475rem 6.1875rem 3.475rem;
+  gap: 6.1875rem;
+}
+
+.services-card__text-area {
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+}
+
+.services-card__text-area__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #803f3f;
+}
+
+.services-card__text-area__text {
+  font-family: "huninn";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(128, 63, 63, 0.8);
+}

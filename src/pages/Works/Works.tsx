@@ -10,11 +10,15 @@ type Props = {};
 export default function Works({}: Props) {
   return (
     <>
-      {/* <Navbar /> */}
-      {/* <RoutesTitle title={"作品"} text={"風兮水兮  往事回首如畫"} /> */}
-      {/* <WorksWebSlider/> */}
+      <Navbar />
+      <div className="spacer--16h" />
+      <RoutesTitle title={"作品"} text={"風兮水兮  往事回首如畫"} />
+      <div className="spacer--8h" />
+      <WorksWebSlider/>
+      <div className="spacer--16h" />
       <WorksTransSlider />
-      {/* <Footer /> */}
+      <div className="spacer--16h" />
+      <Footer />
     </>
   );
 }

@@ -1,0 +1,10 @@
+.info-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.info-list__container {
+  align-self: center;
+  border-bottom: 1px solid #c6a7a7;
+}

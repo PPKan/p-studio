@@ -1,7 +1,8 @@
 import React from "react";
-import Information from "./../../components/Information";
-import { info } from "../../data/info";
+import Information from "../Info/Information";
+import { info } from "../Info/InfoData";
 import "../../css/Front/FrontInformation.scss";
+import InfoList from "../Info/InfoList";
 
 type Props = {};
 
@@ -12,11 +13,7 @@ export default function FrontInformation({}: Props) {
       <p className="front__box__sub-title">
         想知道關於我的最新資訊嗎？看這就對了！
       </p>
-      <div className="front__info__info">
-        {info.map((item) => {
-          return <Information {...item} key={item.date} />;
-        })}
-      </div>
+      <InfoList />
       <button className="front__info__button">看更多</button>
     </section>
   );

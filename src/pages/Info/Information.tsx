@@ -1,9 +1,9 @@
 import React from 'react'
-import "../css/Information.scss"
+import "../../css/Information.scss"
 
 type Props = {
-  date: String,
-  title: String
+  date: string,
+  title: string
 }
 
 export default function Information({date, title}: Props) {

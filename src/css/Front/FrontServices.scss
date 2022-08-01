@@ -1,13 +1,5 @@
 @import "../ShadowCard.scss";
 
-.front__services {
-}
-
-.front__services__main-title {
-}
-
-.front__services__sub-title {
-}
 
 .front__services__cards {
   align-self: center;
@@ -34,8 +26,8 @@
 .front__services__cards__card__title {
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
-  line-height: 32px;
+  font-size: 2rem;
+  line-height: 2rem;
   letter-spacing: 0.05em;
   color: #803f3f;
   align-self: center;
@@ -46,8 +38,8 @@
   font-family: "huninn";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   text-align: center;
   color: rgba(128, 63, 63, 0.9);
 }

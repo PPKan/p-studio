@@ -9,10 +9,10 @@ export default function Navbar({}: Props) {
     <>
       <div className="navbar">
         <div className="navbar__icon">
-        <Link className="navbar__pages__items__move" to={"/"}>
-          P. Studio
-</Link>
-          </div>
+          <Link className="navbar__pages__items__move" to={"/"}>
+            P. Studio
+          </Link>
+        </div>
         <ul className="navbar__pages">
           <li className="navbar__pages__items">
             <Link className="navbar__pages__items__move" to={"/about"}>

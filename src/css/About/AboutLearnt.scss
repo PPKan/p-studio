@@ -2,10 +2,11 @@
 
 .about-learnt__cardbox {
   width: 78rem;
+  max-width: 98%;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6.25rem;
+  gap: 4rem;
 }
 
 .about-learnt-card {

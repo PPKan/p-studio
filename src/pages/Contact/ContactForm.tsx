@@ -13,6 +13,7 @@ export default function ContactForm({}: Props) {
             <div className="contact-form__box__content__title">姓</div>
             <input
               required={true}
+              name="last-name"
               placeholder="王"
               className="contact-form__box__content__input contact-form__box__content__input--half"
             />
@@ -21,6 +22,7 @@ export default function ContactForm({}: Props) {
             <div className="contact-form__box__content__title">名</div>
             <input
               required={true}
+              name="first-name"
               placeholder="大華"
               className="contact-form__box__content__input contact-form__box__content__input--half"
             />
@@ -31,6 +33,7 @@ export default function ContactForm({}: Props) {
             公司名稱 (可選)
           </div>
           <input
+            name="company"
             placeholder="王大華食品"
             className="contact-form__box__content__input"
           />
@@ -38,6 +41,7 @@ export default function ContactForm({}: Props) {
         <div className="contact-form__box__content">
           <div className="contact-form__box__content__title">電子郵件</div>
           <input
+          name="email"
             required={true}
             type={"email"}
             placeholder="wdh@email.com"
@@ -49,6 +53,7 @@ export default function ContactForm({}: Props) {
             手機號碼 (可選)
           </div>
           <input
+          name="mobile"
             placeholder="0912345678"
             className="contact-form__box__content__input"
           />

@@ -1,3 +1,5 @@
+@import "./mq.scss";
+
 .spacer {
   width: 100vw;
 }
@@ -5,6 +7,7 @@
 .spacer__background--left {
   position: absolute;
   height: 20rem;
+  top: calc(50% - 10rem);
   margin-left: -10%;
   opacity: 0.3;
 }
@@ -13,6 +16,7 @@
   position: absolute;
   right: 0;
   height: 20rem;
+  top: calc(50% - 10rem);
   margin-right: -10%;
   opacity: 0.3;
   transform: rotate(180deg);

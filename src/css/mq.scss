@@ -2,24 +2,34 @@
   /* styles for mobile browsers smaller than 480px; (iPhone) */
 }
 
-@media only screen and (device-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 959px) {
   /* default iPad screens */
+
+  .spacer__background--left {
+    height: 10rem !important;
+    top: calc(50% - 5rem) !important;
+  }
+  
+  .spacer__background--right {
+    height: 10rem !important;
+    top: calc(50% - 5rem) !important;
+  } 
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 960px) and (max-width: 1439px) {
   /* styles for browsers larger than 960px; */
+  .spacer__background--left {
+    height: 12.5rem !important;
+    top: calc(50% - 6.25rem) !important;
+  }
+  
+  .spacer__background--right {
+    height: 12.5rem !important;
+    top: calc(50% - 6.25rem) !important;
+  } 
 }
 
 @media only screen and (min-width: 1440px) {
   /* styles for browsers larger than 1440px; */
-  html {
-    // font-size: 12px;
-  }
-}
 
-@media only screen and (min-width: 1800px) {
-  /* styles for browsers larger than 1800px; */
-  html {
-    font-size: 16px;
-  }
 }

@@ -1,10 +1,9 @@
 .info-list {
-  display: flex;
-  flex-direction: column;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .info-list__container {
-  align-self: center;
-  border-bottom: 1px solid #c6a7a7;
 }

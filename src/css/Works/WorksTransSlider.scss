@@ -1,6 +1,5 @@
 @import "./../fonts.scss";
 @import "../font-text.scss";
-@import "./worksMQ.scss";
 
 .workstransslider {
   width: 100%;
@@ -10,15 +9,14 @@
 
 .workstransslider__slider {
   background-color: #f2e1c7;
-
-  width: 68.875rem;
+  width: 60rem;
   max-width: 95%;
-  height: fit-content;
+  height: auto;
   
 }
 
 .workstransslider__slider__slide {
-  padding: 3.625rem 10rem 0 10rem;
+  padding: 5rem 10rem 0 10rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -30,8 +28,8 @@
   align-self: center;
   font-style: normal;
   font-weight: 400;
-  font-size: 2.25rem;
-  line-height: 2.25rem;
+  font-size: 1.5rem;
+  line-height: 1.5em;
   color: black;
 }
 
@@ -49,20 +47,20 @@
 .workstransslider__slider__slide__content__text-area {
   display: flex;
   flex-direction: column;
-
   gap: 2rem;
 }
 
 .workstransslider__slider__slide__content__subtitle { 
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1rem;
   font-style: normal;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.5rem;
   color: #000000;
 }
 
 .workstransslider__slider__slide__content__article {
   min-height: 10.3125rem;
+  font-size: 1rem;
   word-wrap: break-word;
   white-space: pre-wrap;
   color: #000000;
@@ -76,9 +74,7 @@
   width: 10rem;
   height: 3rem;
   position: relative;
-  bottom: 4rem;
   border: 1px solid #A58759;
-  margin-top: 5rem;
   background: none;
   display: flex;
   align-items: center;
@@ -94,3 +90,10 @@
 .swiper-pagination-bullet-active {
   background-color: #A58759;
 }
+
+.swiper-pagination {
+  position: relative;
+  margin-top: 1.5rem;
+}
+
+@import "./WorksTransSliderMQ.scss";

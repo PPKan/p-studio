@@ -2,7 +2,7 @@
 @import "../fonts.scss";
 @import "./Front.scss";
 @import "../ShadowCard.scss";
-@import "./frontMQ.scss";
+
 
 .front__show {
   position: relative;
@@ -15,7 +15,6 @@
 .front__show__main-title {
   font-size: 3rem;
   line-height: 3rem;
-
   align-self: center;
   font-style: normal;
   color: #803f3f;
@@ -42,3 +41,5 @@
   align-self: center;
   box-shadow: 2rem 2rem 1rem 2px rgba(99, 99, 99, 0.23);
 }
+
+@import "./FrontMQ/FrontShowMQ.scss";

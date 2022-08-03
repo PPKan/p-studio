@@ -3,22 +3,21 @@
 
 .front__services__cards {
   align-self: center;
-  width: 80rem;
+  width: 60rem;
   max-width: 98%;
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .front__services__cards__card {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .front__services__cards__card__image {
   align-self: center;
   width: 100%;
-  max-width: 300px;
   aspect-ratio: 1 / 1;
   // background-color: bisque;
 }
@@ -44,3 +43,5 @@
   text-align: center;
   color: rgba(128, 63, 63, 0.9);
 }
+
+@import "./FrontMQ/FrontServicesMQ.scss";

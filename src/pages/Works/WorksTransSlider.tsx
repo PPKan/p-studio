@@ -29,23 +29,23 @@ export default () => (
       className="workstransslider__slider"
     >
       <SwiperSlide className="workstransslider__slider__slide">
-        <h1 className="workstransslider__slider__slide__title">
+        <h1 className="workstransslider__slider__slide__title serif-tc">
           {data[0].title}
         </h1>
         <div className="workstransslider__slider__slide__content workstransslider__slider__slide__content--column">
-          <div className="workstransslider__slider__slide__content__text-area ">
+          <div className="workstransslider__slider__slide__content__text-area serif-jp">
             <h2 className="workstransslider__slider__slide__content__subtitle">
               {data[0].subtitle_0}
             </h2>
-            <article className="workstransslider__slider__slide__content__article huninn-overpass">
+            <article className="workstransslider__slider__slide__content__article">
               {data[0].mainText_0}
             </article>
           </div>
-          <div className="workstransslider__slider__slide__content__text-area">
+          <div className="workstransslider__slider__slide__content__text-area serif-tc">
             <h2 className="workstransslider__slider__slide__content__subtitle">
               {data[0].subtitle_1}
             </h2>
-            <article className="workstransslider__slider__slide__content__article huninn-overpass">
+            <article className="workstransslider__slider__slide__content__article">
               {data[0].mainText_1}
             </article>
           </div>
@@ -55,23 +55,23 @@ export default () => (
         </button>
       </SwiperSlide>
       <SwiperSlide className="workstransslider__slider__slide">
-        <h1 className="workstransslider__slider__slide__title">
+        <h1 className="workstransslider__slider__slide__title serif-tc">
           {data[1].title}
         </h1>
         <div className="workstransslider__slider__slide__content workstransslider__slider__slide__content--column">
-          <div className="workstransslider__slider__slide__content__text-area ">
+          <div className="workstransslider__slider__slide__content__text-area serif-jp">
             <h2 className="workstransslider__slider__slide__content__subtitle">
               {data[1].subtitle_0}
             </h2>
-            <article className="workstransslider__slider__slide__content__article huninn-overpass">
+            <article className="workstransslider__slider__slide__content__article">
               {data[1].mainText_0}
             </article>
           </div>
-          <div className="workstransslider__slider__slide__content__text-area">
+          <div className="workstransslider__slider__slide__content__text-area serif-tc">
             <h2 className="workstransslider__slider__slide__content__subtitle">
               {data[1].subtitle_1}
             </h2>
-            <article className="workstransslider__slider__slide__content__article huninn-overpass">
+            <article className="workstransslider__slider__slide__content__article">
               {data[1].mainText_1}
             </article>
           </div>

@@ -1,4 +1,4 @@
-@import "./colors.scss";
+@import "../colors.scss";
 
 .information {
   width: 50rem;
@@ -27,3 +27,5 @@
 .information__title {
   font-family: 'huninn';
 }
+
+@import "./InformationMQ.scss";

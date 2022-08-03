@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../css/Information.scss"
+import "../../css/Info/Information.scss"
 
 type Props = {
   date: string,

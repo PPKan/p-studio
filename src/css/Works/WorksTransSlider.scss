@@ -16,7 +16,7 @@
 }
 
 .workstransslider__slider__slide {
-  padding: 5rem 10rem 0 10rem;
+  padding: 5vh 10vw 0 10vw;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -36,18 +36,18 @@
 .workstransslider__slider__slide__content--column {
   display: flex;
   flex-direction: column;
-  gap: 5.75rem;
+  gap: 5.75vh;
 }
 
 .workstransslider__slider__slide__content--row {
   display: flex;
-  gap: 5.75rem;
+  gap: 5.75vw;
 }
 
 .workstransslider__slider__slide__content__text-area {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2vh;
 }
 
 .workstransslider__slider__slide__content__subtitle { 

@@ -15,7 +15,7 @@ export default function Front({}: Props) {
   return (
     <>
       <Navbar />
-      <div className="spacer--16h"></div>
+      <div className="spacer--16h spacer--nav"></div>
       <FrontShow />
       <div className="spacer--16h">
         <img className="spacer__background--left" src={bgicon} alt="" />

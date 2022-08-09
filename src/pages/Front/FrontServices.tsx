@@ -15,10 +15,9 @@ export default function FrontServices({}: Props) {
       <div className="front__services__cards">
         <div className="front__services__cards__card shadow-card shadow-card--22w-33h">
           <picture className="front__services__cards__card__image">
-            <source
-              srcSet="src/images/flipping-languages.png" type="image/apng"
-            ></source>
-            <img src="src/images/flipping-languages.gif" />
+            <source srcSet="src/images/front/fs_translation.png" type="image/apng"></source>
+            <source srcSet="src/images/front/fs_translation.gif" type="image/gif"></source>
+            <img src="src/images/front/fs_translation_np.gif" alt=""/>
           </picture>
           <h3 className="front__services__cards__card__title">翻譯</h3>
           <p className="front__services__cards__card__text">
@@ -27,8 +26,9 @@ export default function FrontServices({}: Props) {
         </div>
         <div className="front__services__cards__card shadow-card shadow-card--22w-33h">
           <picture className="front__services__cards__card__image">
-            <source srcSet="src/images/website-drawing.png" type="image/apng"></source>
-            <img src="src/images/website-drawing.gif" />
+            <source srcSet="src/images/front/fs_webdesign.png" type="image/apng"></source>
+            <source srcSet="src/images/front/fs_webdesign.gif" type="image/gif"></source>
+            <img src="src/images/front/fs_webdesign_np.gif" alt=""/>
           </picture>
           <h3 className="front__services__cards__card__title">網頁設計</h3>
           <p className="front__services__cards__card__text">
@@ -37,10 +37,11 @@ export default function FrontServices({}: Props) {
         </div>
         <div className="front__services__cards__card shadow-card shadow-card--22w-33h">
           <picture className="front__services__cards__card__image">
-          <picture className="front__services__cards__card__image">
-            <source srcSet="src/images/language-to-art.png" type="image/apng"></source>
-            <img src="src/images/language-to-art.gif" />
-          </picture>
+            <picture className="front__services__cards__card__image">
+              <source srcSet="src/images/front/fs_typewriter.png" type="image/apng"></source>
+              <source srcSet="src/images/front/fs_typewriter.gif" type="image/gif"></source>
+              <img src="src/images/front/fs_typewriter_np.gif" alt=""/>
+            </picture>
           </picture>
           <h3 className="front__services__cards__card__title">
             全方位語言整合

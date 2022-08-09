@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/Navbar.scss";
+import { AiOutlineMenu } from "react-icons/ai";
+import { IoMdClose } from "react-icons/io";
 
 type Props = {};
 
 export default function Navbar({}: Props) {
+  const [navMenuList, setNavMenuList] = useState("navmenu__list");
+  function handleNavmenu() {
+    if (navMenuList === "navmenu__list navmenu__list--on")
+      setNavMenuList("navmenu__list");
+    else setNavMenuList("navmenu__list navmenu__list--on");
+  }
+
   return (
     <>
       <div className="navbar">
@@ -54,6 +63,24 @@ export default function Navbar({}: Props) {
           <li className="navbar__languages__items">JP</li>
         </ul>
       </div>
+      <div className="navmenu">
+        <span onClick={handleNavmenu}>
+          <AiOutlineMenu className="navmenu__button" />
+        </span>
+        <div className={navMenuList}>
+          <span onClick={handleNavmenu}>
+            <IoMdClose className="navmenu__list__button" />
+          </span>
+          <li className="navmenu__list__list">
+            <ul className="navmenu__list__list__item">About</ul>
+            <ul className="navmenu__list__list__item">Works</ul>
+            <ul className="navmenu__list__list__item">Services</ul>
+            <ul className="navmenu__list__list__item">Info</ul>
+            <ul className="navmenu__list__list__item">Contact</ul>
+          </li>
+        </div>
+      </div>
+      <div className="spacer--16h spacer--nav"></div>
     </>
   );
 }

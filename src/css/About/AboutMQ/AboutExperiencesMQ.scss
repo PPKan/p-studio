@@ -1,60 +1,35 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .navbar {
-    display: none;
-  }
-  .navmenu {
-    display: flex;
-  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .navbar {
-    display: none;
-  }
-  .navmenu {
-    display: flex;
-  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .navbar {
-    display: none;
-  }
-  .navmenu {
-    display: flex;
-  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .navbar {
-    display: none;
-  }
-  .navmenu {
-    display: flex;
-  }
+
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  /* Navbar.scss */
-  .navbar {
-    display: flex;
+  .about-experiences__cardbox {
+    gap: 2.875vw;
   }
-  .navmenu {
-    display: none;
+  .about-experiences-card__content__title {
+    font-size: 1.5vw;
+    line-height: 1.5vw;
   }
-  .navbar__pages,
-  .navbar__languages {
+  .about-experiences-card__content__text {
     font-size: 1vw;
+    line-height: 1.5vw;
+    padding-right: 4.25vw;
   }
-  .navbar__icon {
-    font-size: 2.5vw;
+  .about-experiences-card__image-box {
+    width: 16.75vw;
   }
-  .navbar__pages {
-    gap: 3.75vw;
-  }
-  .navbar__languages {
-    margin-left: 5vw;
-    gap: 0.5vw;
+  .about-experiences-card__image {
+    width: 6.25vw;
+    height: 6.25vw;
   }
 }

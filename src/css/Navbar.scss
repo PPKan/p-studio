@@ -6,10 +6,9 @@
   padding-left: 5%;
   padding-right: 5%;
   height: 16rem;
-
   position: absolute;
   top: 0;
-  display: flex;
+  display: none;
   color: $text-main;
 }
 
@@ -50,6 +49,58 @@
 .navbar__pages__items__move {
   text-decoration: none;
   color: inherit;
+}
+
+.navmenu {
+  // position: absolute;
+  // width: 100%;
+  // height: 4rem;
+  // align-items: center;
+  // justify-content: flex-end;
+  // padding-right: 5%;
+  // // display: flex;
+  // display: none;
+}
+
+.navmenu__button {
+  position: fixed;
+  top: 2%;
+  right: 5%;
+  font-size: 2rem;
+  color: $text-main;
+  z-index: 999;
+}
+
+.navmenu__list {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  background-color: darkgray;
+  z-index: 999;
+}
+
+.navmenu__list--on {
+  display: block;
+}
+
+.navmenu__list__button {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  font-size: 2rem;
+}
+
+.navmenu__list__list {
+  position: absolute;
+  left: 10%;
+  top: 5%;
+  list-style: none;
+  padding: 0;
+  color: whitesmoke;
+  font-size: 2rem;
 }
 
 @import "./NavbarMQ.scss";

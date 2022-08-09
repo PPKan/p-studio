@@ -1,8 +1,5 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .front__show__main-title {
-    font-size: 2rem;
-  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -12,17 +9,9 @@
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  /* FrontShow.scss */
-  .front__show__main-title {
-    font-size: 3vw;
-    line-height: 3vw;
-  }
-  .front__show__sub-title {
-    font-size: 1.5vw;
-    line-height: 1.5vw;
-  }
-  
+
 }

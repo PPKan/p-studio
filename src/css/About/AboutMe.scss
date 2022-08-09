@@ -3,12 +3,15 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .about-me__container {
   width: 61rem;
+  max-width: 61%;
   height: 31.25rem;
   display: flex;
+  align-items: center;
 }
 
 .about-me__container__name {
@@ -29,3 +32,5 @@
   width: 50%;
   flex-shrink: 1;
 }
+
+@import "src/css/About/AboutMQ/AboutMeMQ.scss";

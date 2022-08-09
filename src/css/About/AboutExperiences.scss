@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   gap: 2.875rem;
-  max-width: 98%;
+  width: 70rem;
+  max-width: 96%;
 }
 
 .about-experiences-card {
@@ -17,12 +18,14 @@
 }
 
 .about-experiences-card__image {
+  width: 6.25rem;
+  height: 6.25rem;
 }
 
 .about-experiences-card__content {
   margin-top: 1.5rem;
-  margin-right: 4.625rem;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 0.5rem;
 }
@@ -30,8 +33,8 @@
 .about-experiences-card__content__title {
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   color: #803f3f;
 }
 
@@ -42,7 +45,10 @@
   font-family: "hunnin";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: rgba(128, 63, 63, 0.8);
+  padding-right: 4.25rem;
 }
+
+@import "src/css/About/AboutMQ/AboutExperiencesMQ.scss";

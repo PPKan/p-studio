@@ -14,7 +14,6 @@ export default function About({}: Props) {
   return (
     <>
     <Navbar />
-    <div className="spacer--16h"></div>
     <RoutesTitle title={"關於"} text={"水清風靜  此人只在此處有"} />
     <div className="spacer--8h"></div>
     <AboutMe />

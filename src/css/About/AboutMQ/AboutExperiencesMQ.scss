@@ -1,5 +1,12 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .about-experiences-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-experiences-card__content {
+    text-align: center;
+  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -15,6 +22,7 @@
 @media only screen and (min-width: 1200px) {
   .about-experiences__cardbox {
     gap: 2.875vw;
+    width: 70vw;
   }
   .about-experiences-card__content__title {
     font-size: 1.5vw;

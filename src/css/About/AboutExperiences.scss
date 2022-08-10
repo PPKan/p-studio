@@ -7,11 +7,14 @@
 }
 
 .about-experiences-card {
+  padding: 1rem;
+  height: auto;
   display: flex;
 }
 
 .about-experiences-card__image-box {
-  width: 16.75rem;
+  flex-shrink: 0;
+  width: 33%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +51,7 @@
   font-size: 1rem;
   line-height: 1.5rem;
   color: rgba(128, 63, 63, 0.8);
-  padding-right: 4.25rem;
+  // padding-right: 4.25rem;
 }
 
 @import "src/css/About/AboutMQ/AboutExperiencesMQ.scss";

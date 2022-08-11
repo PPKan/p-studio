@@ -16,7 +16,9 @@ export default function ServicesCard({ title, text, image }: Props) {
           <div className="services-card__text-area__title">{title}</div>
           <div className="services-card__text-area__text">{text}</div>
         </div>
-        <img src={image} alt="" />
+        <div className="services-card__image-box">
+          <img src={image} alt="" className="services-card__image-box__image" />
+        </div>
       </div>
     </>
   );

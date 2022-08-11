@@ -11,7 +11,6 @@ export default function Works({}: Props) {
   return (
     <>
       <Navbar />
-      <div className="spacer--16h" />
       <RoutesTitle title={"作品"} text={"風兮水兮  往事回首如畫"} />
       <div className="spacer--8h" />
       <WorksWebSlider/>

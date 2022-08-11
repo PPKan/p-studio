@@ -11,7 +11,6 @@ export default function Services({}: Props) {
   return (
     <>
       <Navbar />
-      <div className="spacer--16h" />
       <RoutesTitle title={"服務"} text={"風生水起  授劍予君斬蒼天"} />
       <div className="spacer--8h" />
       <ServicesCards />

@@ -9,7 +9,13 @@
   box-shadow: 5px 5px 5px 3px rgba(139, 139, 139, 0.28);
   border-radius: 10px;
   
-  .swiper-button-next, .swiper-button-prev {
+  .swiper-button-next {
+    position: absolute;
+    top: 5%;
+    margin-left: 1.5rem;
+  }
+  
+  .swiper-button-prev {
     position: absolute;
     top: 5%;
   }
@@ -18,13 +24,14 @@
     color: #B7B7B7;
     font-weight: bold;
     font-size: 1.5rem;
+    
   }
   
   .swiper-button-next::before, .swiper-button-prev::before {
     position: absolute;
     z-index: -1;
-    height: 100%;
-    width: 175%;
+    height: 3rem;
+    width: 3rem;
     content: "";
     border-radius: 50%;
     border: 2px solid #B7B7B7;
@@ -67,3 +74,5 @@
   width: 100%;
   background: #FFEAED;
 }
+
+@import "src/css/Works/WorksMQ/WorksWebSliderMQ.scss";

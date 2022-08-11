@@ -10,7 +10,7 @@ import Contact from "./pages/Contact/Contact";
 import ScrollToTop from "./components/ScrollToTop";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <HashRouter>
+  <BrowserRouter>
     <ScrollToTop />
     <Routes>
       <Route path="/" element={<App />}></Route>
@@ -20,5 +20,5 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
       <Route path="/info" element={<Info />}></Route>
       <Route path="/contact" element={<Contact />}></Route>
     </Routes>
-  </HashRouter>
+  </BrowserRouter>
 );

@@ -26,31 +26,4 @@
 .front__contact__key {
   margin-right: 2.5rem;
   z-index: 1;
-  animation: turn-key-out 1s ease-in-out forwards;
-  // transition: all 2s;
-}
-
-.front__contact__container:hover >.front__contact__key {
-  animation: turn-key-in 1s ease-in-out forwards;
-}
-
-@keyframes turn-key-in {
-  75% {
-    transform: rotate(-90deg);
-  }
-  100% {
-    transform: rotate(-90deg) translateY(30px);
-  }
-}
-
-@keyframes turn-key-out {
-  0% {
-    transform: rotate(-90deg) translateY(30px);
-  }
-  25% {
-    transform: rotate(-90deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
 }

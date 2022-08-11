@@ -10,6 +10,7 @@ import "swiper/css/scrollbar";
 
 import "../../css/Works/WorksTransSlider.scss";
 import { WorksTransData } from "./WorksData";
+import { Link } from "react-router-dom";
 
 const data = WorksTransData;
 
@@ -50,9 +51,15 @@ export default () => (
             </article>
           </div>
         </div>
-        <button className="workstransslider__slider__slide__read-more">
-          看更多
-        </button>
+        <a
+          href={data[0].url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="workstransslider__slider__slide__read-more">
+            看更多
+          </button>
+        </a>
       </SwiperSlide>
       <SwiperSlide className="workstransslider__slider__slide">
         <h1 className="workstransslider__slider__slide__title serif-tc">
@@ -76,9 +83,15 @@ export default () => (
             </article>
           </div>
         </div>
-        <button className="workstransslider__slider__slide__read-more">
-          看更多
-        </button>
+        <a
+          href={data[1].url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="workstransslider__slider__slide__read-more">
+            看更多
+          </button>
+        </a>
       </SwiperSlide>
       <SwiperSlide className="workstransslider__slider__slide  serif-tc text-center">
         <h1 className="workstransslider__slider__slide__title">
@@ -102,6 +115,11 @@ export default () => (
             </article>
           </div>
         </div>
+        <a
+          href={data[2].url}
+          target="_blank"
+          rel="noopener noreferrer"
+        ></a>
         <button className="workstransslider__slider__slide__read-more">
           看更多
         </button>
@@ -128,6 +146,7 @@ export default () => (
             </article>
           </div>
         </div>
+        <a href={data[3].url} target="_blank" rel="noopener noreferrer"></a>
         <button className="workstransslider__slider__slide__read-more">
           看更多
         </button>

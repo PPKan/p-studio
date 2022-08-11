@@ -3,6 +3,7 @@ import Information from "../Info/Information";
 import { info } from "../Info/InfoData";
 import "../../css/Front/FrontInformation.scss";
 import InfoList from "../Info/InfoList";
+import { Link } from "react-router-dom";
 
 type Props = {};
 
@@ -14,7 +15,9 @@ export default function FrontInformation({}: Props) {
         想知道關於我的最新資訊嗎？看這就對了！
       </p>
       <InfoList />
-      <button className="front__info__button">看更多</button>
+      <Link to="/info" className="link-style-none front__info__link">
+        <button className="front__info__button">看更多</button>
+      </Link>
     </section>
   );
 }

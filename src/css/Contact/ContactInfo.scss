@@ -1,0 +1,21 @@
+@import "../colors.scss";
+
+.contact-info {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 5%;
+}
+
+.contact-info__item {
+  color: $text-main;
+  font-size: 1.25rem;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@import "src/css/Contact/ContatInfoMQ.scss";

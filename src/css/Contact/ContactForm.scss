@@ -4,11 +4,11 @@
   align-items: center;
   justify-content: center;
   font-family: 'huninn';
+  flex-shrink: 0;
 }
 
 .contact-form__box {
-  width: 49.0625rem;
-  max-width: 98%;
+  width: 100%;
   padding: 4.6875rem 6.25rem 0 6.25rem;
   display: flex;
   flex-direction: column;
@@ -46,7 +46,7 @@
   padding-left: 1rem;
 }
 
-.contact-form__box__content__input:focus {
+.contact-form__box__content__input:focus, .contact-form__box__content__textarea:focus {
   outline: none !important;
   border: 1px solid rgba(128, 63, 63, 0.8);
   

@@ -64,6 +64,11 @@ export default function Navbar({}: Props) {
         </ul>
       </div>
       <div className="navmenu">
+        <div className="navbar__icon navbar__icon--navmenu">
+          <Link className="navbar__pages__items__move" to={"/"}>
+            P. Studio
+          </Link>
+        </div>
         <span onClick={handleNavmenu}>
           <AiOutlineMenu className="navmenu__button" />
         </span>
@@ -72,11 +77,31 @@ export default function Navbar({}: Props) {
             <IoMdClose className="navmenu__list__button" />
           </span>
           <li className="navmenu__list__list">
-            <ul className="navmenu__list__list__item">About</ul>
-            <ul className="navmenu__list__list__item">Works</ul>
-            <ul className="navmenu__list__list__item">Services</ul>
-            <ul className="navmenu__list__list__item">Info</ul>
-            <ul className="navmenu__list__list__item">Contact</ul>
+            <ul className="navmenu__list__list__item">
+              <Link className="navbar__pages__items__move" to={"/about"}>
+                關於 About
+              </Link>
+            </ul>
+            <ul className="navmenu__list__list__item">
+              <Link className="navbar__pages__items__move" to={"/works"}>
+                作品 Works
+              </Link>
+            </ul>
+            <ul className="navmenu__list__list__item">
+              <Link className="navbar__pages__items__move" to={"/services"}>
+                服務 Services
+              </Link>
+            </ul>
+            <ul className="navmenu__list__list__item">
+              <Link className="navbar__pages__items__move" to={"/info"}>
+                消息 Info
+              </Link>
+            </ul>
+            <ul className="navmenu__list__list__item">
+              <Link className="navbar__pages__items__move" to={"/contact"}>
+                聯絡 Contact
+              </Link>
+            </ul>
           </li>
         </div>
       </div>

@@ -32,10 +32,10 @@
 
 .contact-form__box__content__title {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 1rem;
+  line-height: 1rem;
   color: #803f3f;
-  margin-bottom: 7px;
+  margin-bottom: 0.4375rem;
 }
 
 .contact-form__box__content__input {
@@ -62,8 +62,8 @@
 .contact-form__box__content__input::placeholder {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 1rem;
+  line-height: 1rem;
   color: rgba(128, 63, 63, 0.25);
 }
 
@@ -82,3 +82,5 @@
   background-color: rgba(128, 63, 63, 0.1);
   cursor: pointer;
 }
+
+@import "src/css/Contact/ContactFormMQ.scss";

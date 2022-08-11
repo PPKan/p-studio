@@ -7,6 +7,24 @@
   max-width: 98%;
   display: flex;
   gap: 2rem;
+  transform: translateY(20vh)
+}
+
+.front__services__cards--slide-in {
+  animation: slide-in 2s ease-out forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .front__services__cards__card {

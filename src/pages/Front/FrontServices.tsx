@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 import "../../css/Front/FrontServices.scss";
 
 type Props = {};
 
 export default function FrontServices({}: Props) {
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
+
+  const [cards, setCards] = useState("front__services__cards");
+
+  useEffect(() => {
+    if (inView)
+      setCards("front__services__cards front__services__cards--slide-in");
+    else setCards("front__services__cards");
+  }, [inView]);
+
   return (
     <section className="front__services front__box">
       <h2 className="front__services__main-title front__box__main-title">
@@ -12,12 +26,18 @@ export default function FrontServices({}: Props) {
       <p className="front__services__sub-title front__box__sub-title">
         讓語言、資訊、科技的多方位能力成為你的助力
       </p>
-      <div className="front__services__cards">
+      <div className={cards} ref={ref}>
         <div className="front__services__cards__card shadow-card shadow-card--22w-33h">
           <picture className="front__services__cards__card__image">
-            <source srcSet="src/images/front/fs_translation.png" type="image/apng"></source>
-            <source srcSet="src/images/front/fs_translation.gif" type="image/gif"></source>
-            <img src="src/images/front/fs_translation_np.gif" alt=""/>
+            <source
+              srcSet="src/images/front/fs_translation.png"
+              type="image/apng"
+            ></source>
+            <source
+              srcSet="src/images/front/fs_translation.gif"
+              type="image/gif"
+            ></source>
+            <img src="src/images/front/fs_translation_np.gif" alt="" />
           </picture>
           <h3 className="front__services__cards__card__title">翻譯</h3>
           <p className="front__services__cards__card__text">
@@ -26,9 +46,15 @@ export default function FrontServices({}: Props) {
         </div>
         <div className="front__services__cards__card shadow-card shadow-card--22w-33h">
           <picture className="front__services__cards__card__image">
-            <source srcSet="src/images/front/fs_webdesign.png" type="image/apng"></source>
-            <source srcSet="src/images/front/fs_webdesign.gif" type="image/gif"></source>
-            <img src="src/images/front/fs_webdesign_np.gif" alt=""/>
+            <source
+              srcSet="src/images/front/fs_webdesign.png"
+              type="image/apng"
+            ></source>
+            <source
+              srcSet="src/images/front/fs_webdesign.gif"
+              type="image/gif"
+            ></source>
+            <img src="src/images/front/fs_webdesign_np.gif" alt="" />
           </picture>
           <h3 className="front__services__cards__card__title">網頁設計</h3>
           <p className="front__services__cards__card__text">
@@ -38,9 +64,15 @@ export default function FrontServices({}: Props) {
         <div className="front__services__cards__card shadow-card shadow-card--22w-33h">
           <picture className="front__services__cards__card__image">
             <picture className="front__services__cards__card__image">
-              <source srcSet="src/images/front/fs_typewriter.png" type="image/apng"></source>
-              <source srcSet="src/images/front/fs_typewriter.gif" type="image/gif"></source>
-              <img src="src/images/front/fs_typewriter_np.gif" alt=""/>
+              <source
+                srcSet="src/images/front/fs_typewriter.png"
+                type="image/apng"
+              ></source>
+              <source
+                srcSet="src/images/front/fs_typewriter.gif"
+                type="image/gif"
+              ></source>
+              <img src="src/images/front/fs_typewriter_np.gif" alt="" />
             </picture>
           </picture>
           <h3 className="front__services__cards__card__title">

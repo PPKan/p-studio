@@ -12,7 +12,6 @@ export default function Info({}: Props) {
   return (
     <>
       <Navbar />
-      <div className="spacer--16h" />
       <RoutesTitle title={"消息"} text={"順風千里  萬界音字齊聚此"} />
       <div className="spacer--8h" />
       <InfoList />

@@ -8,3 +8,5 @@ A memo to myself
 4. Online -> Amazon aws ec2 with NGINX
 5. Add languages
 6. Add CMS
+
+deploy: git subtree push --prefix dist origin gh-pages

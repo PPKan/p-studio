@@ -18,7 +18,6 @@ Add more animations
 
 deploy: 
 npm run build
-cd dist
 scp -r -i ~/.ssh/p-studio.pem dist/* ubuntu@ec2-54-92-196-184.compute-1.amazonaws.com:~/scp-temp
 ssh -i "p-studio.pem" ubuntu@ec2-54-92-196-184.compute-1.amazonaws.com
 sudo rm -rf /var/www/p-studio-static/*

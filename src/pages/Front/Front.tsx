@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import "../../css/Front/Front.scss";
@@ -12,6 +12,9 @@ import FrontContact from "./FrontContact";
 type Props = {};
 
 export default function Front({}: Props) {
+
+
+
   return (
     <>
       <Navbar />

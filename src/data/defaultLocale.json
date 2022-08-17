@@ -1,0 +1,22 @@
+{
+  "data": {
+      "id": 1,
+      "attributes": {
+          "createdAt": "2022-08-17T05:42:01.116Z",
+          "updatedAt": "2022-08-17T05:42:12.459Z",
+          "publishedAt": null,
+          "Navbar": {
+              "id": 4,
+              "Pages": {
+                  "id": 4,
+                  "Contact": "連絡",
+                  "About": "私について",
+                  "Works": "作品",
+                  "Services": "サービス",
+                  "Info": "お知らせ"
+              }
+          }
+      }
+  },
+  "meta": {}
+}

@@ -1,20 +1,23 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/Navbar.scss";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoMdClose } from "react-icons/io";
+import { ThemeContext } from "../App";
 
 type Props = {};
 
-
-
 export default function Navbar({}: Props) {
   const [navMenuList, setNavMenuList] = useState("navmenu__list");
+
   function handleNavmenu() {
     if (navMenuList === "navmenu__list navmenu__list--on")
       setNavMenuList("navmenu__list");
     else setNavMenuList("navmenu__list navmenu__list--on");
   }
+
+  const {About, Contact, Info, Services, Works} = useContext(ThemeContext);
+  console.log(About)
 
   return (
     <>
@@ -27,27 +30,27 @@ export default function Navbar({}: Props) {
         <ul className="navbar__pages">
           <li className="navbar__pages__items">
             <Link className="navbar__pages__items__move" to={"/about"}>
-              關於
+              {About}
             </Link>
           </li>
           <li className="navbar__pages__items">
             <Link className="navbar__pages__items__move" to={"/works"}>
-              作品
+              {Works}
             </Link>
           </li>
           <li className="navbar__pages__items">
             <Link className="navbar__pages__items__move" to={"/services"}>
-              服務
+              {Services}
             </Link>
           </li>
           <li className="navbar__pages__items">
             <Link className="navbar__pages__items__move" to={"/info"}>
-              消息
+              {Info}
             </Link>
           </li>
           <li className="navbar__pages__items">
             <Link className="navbar__pages__items__move" to={"/contact"}>
-              聯絡
+              {Contact}
             </Link>
           </li>
         </ul>

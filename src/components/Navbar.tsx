@@ -6,6 +6,8 @@ import { IoMdClose } from "react-icons/io";
 
 type Props = {};
 
+
+
 export default function Navbar({}: Props) {
   const [navMenuList, setNavMenuList] = useState("navmenu__list");
   function handleNavmenu() {

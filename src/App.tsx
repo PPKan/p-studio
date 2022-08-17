@@ -5,7 +5,7 @@ import Front from "./pages/Front/Front";
 function App() {
   return (
     <>
-    <Front/>
+      <Front />
     </>
   );
 }

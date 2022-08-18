@@ -8,42 +8,57 @@ import Contact from "./pages/Contact/Contact";
 import ScrollToTop from "./components/ScrollToTop";
 import Front from "./pages/Front/Front";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { createContext } from "react";
+import { createContext, useCallback, useState } from "react";
 import fetchLocale from "./components/fetchLocale";
 import { processedLocale } from "./components/processedLocale";
+import defaultLocale from "./data/defaultLocale.json";
+import { Locale } from "./components/interface";
 
-let data = await fetchLocale().then((res) => {
-  return res;
-});
-// console.log(data)
+export const localeData = await fetchLocale()
+  .then((res) => {
+    return res;
+  })
+  .catch((err) => {
+    console.error(err);
+    return defaultLocale;
+  });
 
-export const ThemeContext = createContext(processedLocale.Pages); // the value here is so-called default
-
-export async function ThemeChanger(language: string) {
-  if (language === "EN") {
-    data = await fetchLocale().then((res) => {
-      return res;
-    });
-  } else {
-    data = processedLocale;
-  }
-}
-
+export const HandleLocaleContext = createContext((x: string) => null);
+export const LocaleContext = createContext(processedLocale);
 function App() {
+  // const [, updateState] = useState({});
+  // const forceUpdate = useCallback(() => updateState({}), []);
+
+  const [locale, setLocale] = useState(localeData);
+  const [number, setNumber] = useState(0);
+  function handleLocale(text: string): null {
+    if (text === "EN") {
+      setLocale(localeData);
+      setNumber(1);
+    } else {
+      setLocale(processedLocale);
+      setNumber(0);
+    }
+    console.log(number);
+    return null;
+  }
+
   return (
     <>
       <BrowserRouter>
         <ScrollToTop />
-        <ThemeContext.Provider value={data.Pages}>
-          <Routes>
-            <Route path="/" element={<Front />}></Route>
-            <Route path="/about" element={<About />}></Route>
-            <Route path="/works" element={<Works />}></Route>
-            <Route path="/services" element={<Services />}></Route>
-            <Route path="/info" element={<Info />}></Route>
-            <Route path="/contact" element={<Contact />}></Route>
-          </Routes>
-        </ThemeContext.Provider>
+        <HandleLocaleContext.Provider value={handleLocale}>
+          <LocaleContext.Provider value={locale}>
+            <Routes>
+              <Route path="/" element={<Front />}></Route>
+              <Route path="/about" element={<About />}></Route>
+              <Route path="/works" element={<Works />}></Route>
+              <Route path="/services" element={<Services />}></Route>
+              <Route path="/info" element={<Info />}></Route>
+              <Route path="/contact" element={<Contact />}></Route>
+            </Routes>
+          </LocaleContext.Provider>
+        </HandleLocaleContext.Provider>
       </BrowserRouter>
     </>
   );

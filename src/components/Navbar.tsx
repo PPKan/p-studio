@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../css/Navbar.scss";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoMdClose } from "react-icons/io";
-import { ThemeContext } from "../App";
+import { HandleLocaleContext, LocaleContext } from "../App";
 
 type Props = {};
 
@@ -16,8 +16,18 @@ export default function Navbar({}: Props) {
     else setNavMenuList("navmenu__list navmenu__list--on");
   }
 
-  const {About, Contact, Info, Services, Works} = useContext(ThemeContext);
-  console.log(About)
+  const handleLocale = useContext(HandleLocaleContext);
+  const locale = useContext(LocaleContext)
+
+  const { About, Contact, Info, Services, Works } = locale.Pages
+  // {
+  //   About: "About",
+  //   Contact: "Contact",
+  //   Info: "Info",
+  //   Services: "Services",
+  //   Works: "Works",
+  // };
+  console.log("Rerendered");
 
   return (
     <>
@@ -60,12 +70,22 @@ export default function Navbar({}: Props) {
             {" "}
             /{" "}
           </li>
-          <li className="navbar__languages__items">EN</li>
+          <li className="navbar__languages__items">
+            <button
+              onClick={() => {
+                handleLocale("EN");
+              }}
+            >
+              EN
+            </button>
+          </li>
           <li className="navbar__languages__items, navbar__languages__items--split">
             {" "}
             /{" "}
           </li>
-          <li className="navbar__languages__items">JP</li>
+          <li className="navbar__languages__items">
+            <button onClick={() => handleLocale("JP")}>JP</button>
+          </li>
         </ul>
       </div>
       <div className="navmenu">

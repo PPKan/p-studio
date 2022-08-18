@@ -13,8 +13,6 @@ type Props = {};
 
 export default function Front({}: Props) {
 
-
-
   return (
     <>
       <Navbar />

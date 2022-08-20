@@ -8,13 +8,17 @@ import FrontWorks from "./FrontWorks";
 import FrontInformation from "./FrontInformation";
 import bgicon from "../../images/bg-icon.svg";
 import FrontContact from "./FrontContact";
+import { useTranslation } from "react-i18next";
 
 type Props = {};
 
 export default function Front({}: Props) {
+  const { t, i18n } = useTranslation();
+
   return (
     <>
       <Navbar />
+      <h1 onClick={() => i18n.changeLanguage()}>{t("Welcome to React")}</h1>
       <FrontShow />
       <div className="spacer--16h">
         <img className="spacer__background--left" src={bgicon} alt="" />

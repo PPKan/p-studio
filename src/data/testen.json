@@ -1,0 +1,41 @@
+{
+  "data": {
+      "id": 1,
+      "attributes": {
+          "createdAt": "2022-08-20T08:41:44.445Z",
+          "updatedAt": "2022-08-20T08:49:51.867Z",
+          "publishedAt": "2022-08-20T08:49:51.865Z",
+          "translation": [
+              {
+                  "id": 1,
+                  "__component": "navbar.navbar",
+                  "About": "About",
+                  "Works": "Works",
+                  "Services": "Services",
+                  "Contact": "Contact",
+                  "Info": "Info"
+              },
+              {
+                  "id": 1,
+                  "__component": "front.front",
+                  "frontShowMainTitle": "LANGUAGE WITH ART",
+                  "frontShowSubTitle": "Develop your dream through languages",
+                  "frontServicesMainTitle": "Services",
+                  "frontServiceSubTitle": "Let my languages, computer sciences, technology skills become your partner",
+                  "frontServicesBox1Title": "Translation",
+                  "frontServicesBox2Title": "Web Design",
+                  "frontServicesBox3Title": "All-Rounded Language Support",
+                  "frontServicesBox1Text": "From Figma design to AWS deployment, one-stop services provides best experiences to you.",
+                  "frontServicesBox2Text": "Translate your websites, documents, to English, Mandarin, Japanese",
+                  "frontServicesBox3Text": "No need to find translator or designer, a whole intergrated service help you translate and intergrate your localization website, illustration.",
+                  "frontWorksMainTitle": "Works",
+                  "frontWorksSubTitle": "Here are my translation works! Welcome to find programming woks in /works page",
+                  "frontInfoMainTitle": "Informations",
+                  "frontInfoSubTitle": "Look here to find my latest movement!",
+                  "frontInfoReadMore": "Read More"
+              }
+          ]
+      }
+  },
+  "meta": {}
+}

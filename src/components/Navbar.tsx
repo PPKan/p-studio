@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../css/Navbar.scss";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoMdClose } from "react-icons/io";
+import { useTranslation } from "react-i18next";
 
 type Props = {};
 
@@ -13,6 +14,7 @@ export default function Navbar({}: Props) {
       setNavMenuList("navmenu__list");
     else setNavMenuList("navmenu__list navmenu__list--on");
   }
+  const { t, i18n } = useTranslation();
 
   return (
     <>
@@ -25,37 +27,37 @@ export default function Navbar({}: Props) {
         <ul className="navbar__pages">
           <li className="navbar__pages__items">
             <Link className="navbar__pages__items__move" to={"/about"}>
-              關於
+              {t("About")}
             </Link>
           </li>
           <li className="navbar__pages__items">
             <Link className="navbar__pages__items__move" to={"/works"}>
-              作品
+              {t("Works")}
             </Link>
           </li>
           <li className="navbar__pages__items">
             <Link className="navbar__pages__items__move" to={"/services"}>
-              服務
+            {t("Services")}
             </Link>
           </li>
           <li className="navbar__pages__items">
             <Link className="navbar__pages__items__move" to={"/info"}>
-              消息
+            {t("Info")}
             </Link>
           </li>
           <li className="navbar__pages__items">
             <Link className="navbar__pages__items__move" to={"/contact"}>
-              聯絡
+            {t("Contact")}
             </Link>
           </li>
         </ul>
         <ul className="navbar__languages">
-          <li className="navbar__languages__items">ZH-TW</li>
+          <li className="navbar__languages__items" onClick={() => i18n.changeLanguage("zh")}>ZH-TW</li>
           <li className="navbar__languages__items, navbar__languages__items--split">
             {" "}
             /{" "}
           </li>
-          <li className="navbar__languages__items">EN</li>
+          <li className="navbar__languages__items" onClick={() => i18n.changeLanguage("en")}>EN</li>
           <li className="navbar__languages__items, navbar__languages__items--split">
             {" "}
             /{" "}

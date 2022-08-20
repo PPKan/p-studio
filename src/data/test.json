@@ -1,0 +1,41 @@
+{
+  "data": {
+      "id": 1,
+      "attributes": {
+          "createdAt": "2022-08-20T08:57:08.705Z",
+          "updatedAt": "2022-08-20T08:57:11.797Z",
+          "publishedAt": "2022-08-20T08:57:11.796Z",
+          "translation": [
+              {
+                  "id": 3,
+                  "__component": "navbar.navbar",
+                  "About": "關於",
+                  "Works": "作品",
+                  "Services": "服務",
+                  "Contact": "消息",
+                  "Info": "聯絡"
+              },
+              {
+                  "id": 3,
+                  "__component": "front.front",
+                  "frontShowMainTitle": "LANGUAGE WITH ART",
+                  "frontShowSubTitle": "讓言語找到對象",
+                  "frontServicesMainTitle": "服務",
+                  "frontServiceSubTitle": "讓語言、資訊、科技的多方位能力成為你的助力",
+                  "frontServicesBox1Title": "翻譯",
+                  "frontServicesBox2Title": "網頁設計",
+                  "frontServicesBox3Title": "全方位語言整合",
+                  "frontServicesBox1Text": "透過翻譯技巧與對中、英、日三國語言的理解將您的文件翻譯到好，除了文件之外，網頁、遊戲也都可以為您服務",
+                  "frontServicesBox2Text": "規劃、設計、程式一條龍，讓您舒服地完成網頁設計。豐富的商業溝通能力更是讓您能夠沒有壓力地談論關於您理想網頁的一切",
+                  "frontServicesBox3Text": "網頁、圖片想要多加幾種語言，卻要找翻譯社，又要找設計師，太辛苦了！這裡的整合服務，從網站到圖片、文字，全部幫你翻譯設計到好！",
+                  "frontWorksMainTitle": "作品",
+                  "frontWorksSubTitle": "下面是我的翻譯作品，有歌詞、社論，作品頁面內有程式作品唷！",
+                  "frontInfoMainTitle": "消息",
+                  "frontInfoSubTitle": "想知道關於我的最新資訊嗎？看這就對了！",
+                  "frontInfoReadMore": "看更多"
+              }
+          ]
+      }
+  },
+  "meta": {}
+}
